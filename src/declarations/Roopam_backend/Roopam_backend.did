@@ -1,0 +1,10 @@
+type BoxInputData = 
+ record {
+   box0: text;
+   box1: text;
+   box2: text;
+ };
+service : {
+  changeTurn: (text) -> (text) query;
+  checkWin: (BoxInputData) -> (bool);
+}
